@@ -1,9 +1,8 @@
-
 import React from 'react';
 import Header from './Header';
 import Hero from './Hero';
 import Footer from './Footer';
-import { Shield, CheckCircle, Clock, CreditCard, Award, Star } from 'lucide-react';
+import { Shield, CheckCircle, Clock, Award, Star } from 'lucide-react';
 
 const DesignTwo: React.FC = () => {
   return (
@@ -16,7 +15,9 @@ const DesignTwo: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <span className="bg-design2-accent/10 text-design2-accent px-4 py-1 rounded-full text-sm font-medium inline-block mb-4">LA NOSTRA MISSIONE</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">La Nostra Promessa: <span className="text-design2-primary">Acquisti Trasparenti e Sicuri</span></h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="text-design2-primary">La Nostra Promessa: Acquisti Trasparenti e Sicuri</span>
+            </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Mettiamo la tua sicurezza al primo posto, guidandoti verso acquisti consapevoli e garantiti.
             </p>
@@ -40,26 +41,6 @@ const DesignTwo: React.FC = () => {
               <h3 className="font-bold text-xl mb-3">Prodotti Certificati e Originali</h3>
               <p className="text-gray-600">
                 Acquista con fiducia. Solo prodotti originali, garantiti dai produttori ufficiali.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-shadow border border-gray-100 transform hover:-translate-y-1 transition-transform">
-              <div className="feature-icon-2 mb-6">
-                <CreditCard size={28} />
-              </div>
-              <h3 className="font-bold text-xl mb-3">Acquisti Diretti e Sicuri</h3>
-              <p className="text-gray-600">
-                Acquista direttamente dai siti ufficiali per una sicurezza totale nei tuoi acquisti.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-shadow border border-gray-100 transform hover:-translate-y-1 transition-transform">
-              <div className="feature-icon-2 mb-6">
-                <Clock size={28} />
-              </div>
-              <h3 className="font-bold text-xl mb-3">Consegna Veloce</h3>
-              <p className="text-gray-600">
-                Acquista online e ricevi il tuo prodotto in modo rapido e senza stress.
               </p>
             </div>
             
