@@ -16,14 +16,14 @@ const Index = () => {
           size="sm"
           onClick={() => setActiveDesign('design1')}
         >
-          Design Blu
+          Design Navy
         </Button>
         <Button 
           variant={activeDesign === 'design2' ? 'default' : 'outline'} 
           size="sm"
           onClick={() => setActiveDesign('design2')}
         >
-          Design Verde
+          Design Orange
         </Button>
       </div>
 

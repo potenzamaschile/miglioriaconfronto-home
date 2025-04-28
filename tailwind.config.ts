@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -67,21 +66,21 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))'
         },
-        // Design One Colors - Blue theme
+        // Design One Colors - Billoo Blue theme
         design1: {
-          primary: '#1EAEDB',
-          secondary: '#33C3F0',
-          accent: '#0FA0CE',
-          light: '#F3F3F3',
-          dark: '#333333',
+          primary: '#0A194C',
+          secondary: '#162655',
+          accent: '#293C70',
+          light: '#F5F6FA',
+          dark: '#06102E',
         },
-        // Design Two Colors - Green theme
+        // Design Two Colors - Billoo Orange theme
         design2: {
-          primary: '#4CAF50',
-          secondary: '#8BC34A',
-          accent: '#2E7D32',
-          light: '#F9FBF7',
-          dark: '#333333',
+          primary: '#F56522',
+          secondary: '#FF7B40',
+          accent: '#E85A16',
+          light: '#FFF8F5',
+          dark: '#06102E',
         }
       },
       borderRadius: {
