@@ -66,15 +66,22 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))'
         },
-        // Design One Colors - New Pink/Magenta theme
         design1: {
           primary: '#E6007E',
           secondary: '#FF1493',
           accent: '#FF69B4',
           light: '#FFF0F7',
-          dark: '#4A0028'
+          dark: '#4A0028',
+          skyblue: '#33C3F0',
+          purple: '#9b87f5',
+          'purple-light': '#D6BCFA',
+          'purple-dark': '#7E69AB',
+          gradient: {
+            start: '#33C3F0',
+            middle: '#9b87f5',
+            end: '#E6007E'
+          }
         },
-        // Design Two Colors - Billoo Orange theme
         design2: {
           primary: '#F56522',
           secondary: '#FF7B40',
@@ -123,6 +130,10 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in': 'fade-in 0.5s ease-out',
         'slide-in': 'slide-in 0.5s ease-out'
+      },
+      backgroundImage: {
+        'gradient-design1': 'linear-gradient(180deg, #33C3F0 0%, #9b87f5 50%, #E6007E 100%)',
+        'gradient-design1-reverse': 'linear-gradient(180deg, #E6007E 0%, #9b87f5 50%, #33C3F0 100%)',
       }
     }
   },
