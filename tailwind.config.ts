@@ -66,13 +66,13 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))'
         },
-        // Design One Colors - Billoo Blue theme
+        // Design One Colors - New Pink/Magenta theme
         design1: {
-          primary: '#0A194C',
-          secondary: '#162655',
-          accent: '#293C70',
-          light: '#F5F6FA',
-          dark: '#06102E',
+          primary: '#E6007E',
+          secondary: '#FF1493',
+          accent: '#FF69B4',
+          light: '#FFF0F7',
+          dark: '#4A0028'
         },
         // Design Two Colors - Billoo Orange theme
         design2: {

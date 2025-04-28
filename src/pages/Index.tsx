@@ -16,7 +16,7 @@ const Index = () => {
           size="sm"
           onClick={() => setActiveDesign('design1')}
         >
-          Design Navy
+          Design Pink
         </Button>
         <Button 
           variant={activeDesign === 'design2' ? 'default' : 'outline'} 
