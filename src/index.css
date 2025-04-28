@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +99,54 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-semibold;
+  }
+
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .section-padding {
+    @apply py-12 md:py-20;
+  }
+
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary-1 {
+    @apply bg-design1-primary text-white py-3 px-6 rounded-md hover:bg-design1-accent transition-colors font-medium;
+  }
+  
+  .btn-secondary-1 {
+    @apply bg-white text-design1-primary border border-design1-primary py-3 px-6 rounded-md hover:bg-design1-light transition-colors font-medium;
+  }
+  
+  .btn-primary-2 {
+    @apply bg-design2-primary text-white py-3 px-6 rounded-md hover:bg-design2-accent transition-colors font-medium;
+  }
+  
+  .btn-secondary-2 {
+    @apply bg-white text-design2-primary border border-design2-primary py-3 px-6 rounded-md hover:bg-design2-light transition-colors font-medium;
+  }
+  
+  .card-shadow {
+    @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .feature-icon-1 {
+    @apply bg-design1-light text-design1-primary p-4 rounded-full inline-block;
+  }
+  
+  .feature-icon-2 {
+    @apply bg-design2-light text-design2-primary p-4 rounded-full inline-block;
   }
 }

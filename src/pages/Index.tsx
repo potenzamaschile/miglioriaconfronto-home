@@ -1,12 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useState } from 'react';
+import DesignOne from '@/components/DesignOne';
+import DesignTwo from '@/components/DesignTwo';
+import { Button } from '@/components/ui/button';
 
 const Index = () => {
+  const [activeDesign, setActiveDesign] = useState<'design1' | 'design2'>('design1');
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen">
+      {/* Design Switcher */}
+      <div className="fixed top-4 right-4 z-50 bg-white shadow-lg rounded-lg p-2 flex gap-2">
+        <Button 
+          variant={activeDesign === 'design1' ? 'default' : 'outline'} 
+          size="sm"
+          onClick={() => setActiveDesign('design1')}
+        >
+          Design Blu
+        </Button>
+        <Button 
+          variant={activeDesign === 'design2' ? 'default' : 'outline'} 
+          size="sm"
+          onClick={() => setActiveDesign('design2')}
+        >
+          Design Verde
+        </Button>
       </div>
+
+      {/* Render active design */}
+      {activeDesign === 'design1' ? <DesignOne /> : <DesignTwo />}
     </div>
   );
 };
