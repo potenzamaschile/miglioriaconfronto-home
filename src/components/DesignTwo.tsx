@@ -15,9 +15,7 @@ const DesignTwo: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <span className="bg-design2-accent/10 text-design2-accent px-4 py-1 rounded-full text-sm font-medium inline-block mb-4">LA NOSTRA MISSIONE</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="text-design2-primary">La Nostra Promessa: Acquisti Trasparenti e Sicuri</span>
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">La Nostra Promessa: Acquisti Trasparenti e Sicuri</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Mettiamo la tua sicurezza al primo posto, guidandoti verso acquisti consapevoli e garantiti.
             </p>
