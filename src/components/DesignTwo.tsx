@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Hero from './Hero';
 import Footer from './Footer';
-import { Shield, CheckCircle, Clock, Award, Star } from 'lucide-react';
+import { Shield, CheckCircle, Award, Star } from 'lucide-react';
 
 const DesignTwo: React.FC = () => {
   return (
@@ -52,12 +52,6 @@ const DesignTwo: React.FC = () => {
               <p className="text-gray-600">
                 Cerchiamo e analizziamo le migliori offerte e promozioni attive, per farti risparmiare senza compromettere la qualità.
               </p>
-            </div>
-            
-            <div className="flex items-center justify-center">
-              <button className="btn-primary-2">
-                Scopri Tutti i Vantaggi
-              </button>
             </div>
           </div>
         </div>

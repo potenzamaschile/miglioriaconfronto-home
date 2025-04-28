@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Hero from './Hero';
 import Footer from './Footer';
-import { Shield, CheckCircle, Clock, CreditCard, Award } from 'lucide-react';
+import { Shield, CheckCircle, Award } from 'lucide-react';
 
 const DesignOne: React.FC = () => {
   return (
@@ -38,26 +38,6 @@ const DesignOne: React.FC = () => {
               <h3 className="font-bold text-xl mb-2">Prodotti Certificati e Originali</h3>
               <p className="text-gray-600">
                 Acquista con fiducia. Solo prodotti originali, garantiti dai produttori ufficiali.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-              <div className="feature-icon-1 mb-4">
-                <CreditCard size={24} />
-              </div>
-              <h3 className="font-bold text-xl mb-2">Acquisti Diretti e Sicuri</h3>
-              <p className="text-gray-600">
-                Acquista direttamente dai siti ufficiali per una sicurezza totale nei tuoi acquisti.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-              <div className="feature-icon-1 mb-4">
-                <Clock size={24} />
-              </div>
-              <h3 className="font-bold text-xl mb-2">Consegna Veloce</h3>
-              <p className="text-gray-600">
-                Acquista online e ricevi il tuo prodotto in modo rapido e senza stress.
               </p>
             </div>
             
