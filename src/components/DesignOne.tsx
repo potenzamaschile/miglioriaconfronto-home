@@ -74,7 +74,7 @@ const DesignOne: React.FC = () => {
             <div className="flex flex-col items-center text-center">
               <div className="w-12 h-12 rounded-full bg-design1-primary text-white flex items-center justify-center font-bold text-lg mb-4">2</div>
               <h3 className="font-bold text-lg mb-2">Scegli</h3>
-              <p className="text-gray-600 text-sm">Scegli il prodotto che fa per te.</p>
+              <p className="text-gray-600 text-sm">scegli il prodotto che fa per te al giusto prezzo</p>
             </div>
             
             <div className="flex flex-col items-center text-center">
@@ -91,8 +91,8 @@ const DesignOne: React.FC = () => {
             
             <div className="flex flex-col items-center text-center">
               <div className="w-12 h-12 rounded-full bg-design1-primary text-white flex items-center justify-center font-bold text-lg mb-4">5</div>
-              <h3 className="font-bold text-lg mb-2">Tranquillità</h3>
-              <p className="text-gray-600 text-sm">Acquista con tranquillità: ricevi solo prodotti originali, garantiti dai produttori.</p>
+              <h3 className="font-bold text-lg mb-2">Rilassati</h3>
+              <p className="text-gray-600 text-sm">Riceverai solo prodotti originali, garantiti dai produttori.</p>
             </div>
           </div>
           

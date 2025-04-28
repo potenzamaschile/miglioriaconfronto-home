@@ -82,7 +82,7 @@ const DesignTwo: React.FC = () => {
               <div className="bg-white rounded-2xl p-6 shadow-md text-center">
                 <div className="w-16 h-16 rounded-full bg-design2-primary text-white flex items-center justify-center font-bold text-2xl mb-4 mx-auto">2</div>
                 <h3 className="font-bold text-lg mb-2">Scegli</h3>
-                <p className="text-gray-600 text-sm">Scegli il prodotto che fa per te.</p>
+                <p className="text-gray-600 text-sm">scegli il prodotto che fa per te al giusto prezzo</p>
               </div>
               
               <div className="bg-white rounded-2xl p-6 shadow-md text-center">
@@ -99,8 +99,8 @@ const DesignTwo: React.FC = () => {
               
               <div className="bg-white rounded-2xl p-6 shadow-md text-center">
                 <div className="w-16 h-16 rounded-full bg-design2-primary text-white flex items-center justify-center font-bold text-2xl mb-4 mx-auto">5</div>
-                <h3 className="font-bold text-lg mb-2">Tranquillità</h3>
-                <p className="text-gray-600 text-sm">Acquista con tranquillità: ricevi solo prodotti originali.</p>
+                <h3 className="font-bold text-lg mb-2">Rilassati</h3>
+                <p className="text-gray-600 text-sm">Riceverai solo prodotti originali, garantiti dai produttori.</p>
               </div>
             </div>
           </div>
