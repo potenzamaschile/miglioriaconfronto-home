@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Search, Menu, ShieldCheck } from 'lucide-react';
 
@@ -21,19 +20,13 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
         
         <div className="hidden md:flex items-center space-x-6">
           <a href="#" className={`font-medium ${isDesign1 ? 'text-design1-dark hover:text-design1-primary' : 'text-design2-dark hover:text-design2-primary'}`}>
-            Home
+            Come Funziona
           </a>
           <a href="#" className={`font-medium ${isDesign1 ? 'text-design1-dark hover:text-design1-primary' : 'text-design2-dark hover:text-design2-primary'}`}>
-            Categorie
+            I Nostri Valori
           </a>
           <a href="#" className={`font-medium ${isDesign1 ? 'text-design1-dark hover:text-design1-primary' : 'text-design2-dark hover:text-design2-primary'}`}>
-            Confronta
-          </a>
-          <a href="#" className={`font-medium ${isDesign1 ? 'text-design1-dark hover:text-design1-primary' : 'text-design2-dark hover:text-design2-primary'}`}>
-            Chi Siamo
-          </a>
-          <a href="#" className={`font-medium ${isDesign1 ? 'text-design1-dark hover:text-design1-primary' : 'text-design2-dark hover:text-design2-primary'}`}>
-            Blog
+            Recensioni
           </a>
         </div>
         
