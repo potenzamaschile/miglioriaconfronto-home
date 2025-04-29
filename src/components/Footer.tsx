@@ -17,7 +17,7 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
   return (
     <footer className={`${bgColor} text-white`}>
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <ShieldCheck className={primaryColor} size={28} />
@@ -26,7 +26,7 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
               </span>
             </div>
             <p className="text-gray-400 mb-6">
-              Il tuo sito di fiducia per confrontare i migliori prodotti per donna, garantendo un acquisto sicuro dai produttori ufficiali.
+              Selezioniamo solo prodotti migliori e originali basandoci su efficacia, innovazione e feedback degli utenti. Alcuni brand ci riconoscono una commissione per ogni acquisto tramite i nostri link, il che può influenzare la visibilità dei prodotti sul sito. Grazie a queste collaborazioni, ti offriamo un servizio sempre gratuito, aggiornato e trasparente
             </p>
             <div className="flex space-x-4">
               <a href="#" className={`p-2 rounded-full ${primaryColor} bg-white/10 hover:bg-white/20 transition-colors`}>
@@ -36,28 +36,6 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
                 <Phone size={20} />
               </a>
             </div>
-          </div>
-          
-          <div className="md:col-span-1">
-            <h4 className="font-bold text-lg mb-4">Categorie</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className={linkColor}>Beauty e Cosmetici</a></li>
-              <li><a href="#" className={linkColor}>Cura della Persona</a></li>
-              <li><a href="#" className={linkColor}>Benessere e Salute</a></li>
-              <li><a href="#" className={linkColor}>Casa e Lifestyle</a></li>
-              <li><a href="#" className={linkColor}>Moda e Accessori</a></li>
-            </ul>
-          </div>
-          
-          <div className="md:col-span-1">
-            <h4 className="font-bold text-lg mb-4">Link Utili</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className={linkColor}>Chi Siamo</a></li>
-              <li><a href="#" className={linkColor}>Come Funziona</a></li>
-              <li><a href="#" className={linkColor}>I Nostri Valori</a></li>
-              <li><a href="#" className={linkColor}>FAQ</a></li>
-              <li><a href="#" className={linkColor}>Blog</a></li>
-            </ul>
           </div>
           
           <div className="md:col-span-1">
