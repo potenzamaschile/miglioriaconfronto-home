@@ -249,10 +249,6 @@ const DesignOne: React.FC = () => {
               </div>
             </div>
           </div>
-          
-          <div className="text-center mt-12">
-            <button className="btn-secondary-1">Leggi Tutte le Testimonianze</button>
-          </div>
         </div>
       </section>
       

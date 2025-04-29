@@ -259,10 +259,6 @@ const DesignTwo: React.FC = () => {
               </div>
             </div>
           </div>
-          
-          <div className="text-center mt-12">
-            <button className="btn-secondary-2">Leggi Tutte le Testimonianze</button>
-          </div>
         </div>
       </section>
       
