@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShieldCheck, Mail, Phone } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
 
 interface FooterProps {
   variant: 'design1' | 'design2';
@@ -28,14 +28,6 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
             <p className="text-gray-400 mb-6">
               Selezioniamo solo prodotti migliori e originali basandoci su efficacia, innovazione e feedback degli utenti. Alcuni brand ci riconoscono una commissione per ogni acquisto tramite i nostri link, il che può influenzare la visibilità dei prodotti sul sito. Grazie a queste collaborazioni, ti offriamo un servizio sempre gratuito, aggiornato e trasparente
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className={`p-2 rounded-full ${primaryColor} bg-white/10 hover:bg-white/20 transition-colors`}>
-                <Mail size={20} />
-              </a>
-              <a href="#" className={`p-2 rounded-full ${primaryColor} bg-white/10 hover:bg-white/20 transition-colors`}>
-                <Phone size={20} />
-              </a>
-            </div>
           </div>
           
           <div className="md:col-span-1">
@@ -43,7 +35,6 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
             <ul className="space-y-2">
               <li><a href="#" className={linkColor}>Privacy Policy</a></li>
               <li><a href="#" className={linkColor}>Cookie Policy</a></li>
-              <li><a href="#" className={linkColor}>Termini e Condizioni</a></li>
               <li><a href="#" className={linkColor}>Contatti</a></li>
             </ul>
           </div>
@@ -54,10 +45,7 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-500 text-sm mb-4 md:mb-0">
-              © {currentYear} Migliori-A-Confronto.com | Tutti i diritti riservati
-            </div>
-            <div className="text-gray-500 text-sm">
-              <span>Made with ❤️ in Italia</span>
+              ©{currentYear} Migliori a Confronto. Tutti i diritti riservati No Follow
             </div>
           </div>
         </div>
