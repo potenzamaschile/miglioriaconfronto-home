@@ -11,7 +11,7 @@ const DesignTwo: React.FC = () => {
       <Hero variant="design2" />
       
       {/* Cosa Facciamo Per Te */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white" id="la-nostra-promessa">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <span className="bg-design2-accent/10 text-design2-accent px-4 py-1 rounded-full text-sm font-medium inline-block mb-4">LA NOSTRA MISSIONE</span>
@@ -179,7 +179,7 @@ const DesignTwo: React.FC = () => {
                 </div>
               </div>
               
-              <button className="btn-primary-2 mt-8">Scopri di Più</button>
+              <a href="#la-nostra-promessa" className="btn-primary-2 mt-8">Scopri di Più</a>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ const DesignOne: React.FC = () => {
       <Hero variant="design1" />
       
       {/* Cosa Facciamo Per Te */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white" id="la-nostra-promessa">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">La Nostra Promessa: Acquisti Trasparenti e Sicuri</h2>
@@ -157,7 +157,7 @@ const DesignOne: React.FC = () => {
                 </div>
               </div>
               
-              <button className="btn-primary-1 mt-8">Scopri di Più</button>
+              <a href="#la-nostra-promessa" className="btn-primary-1 mt-8">Scopri di Più</a>
             </div>
             
             <div className="lg:w-1/2">
