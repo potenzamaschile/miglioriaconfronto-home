@@ -269,9 +269,14 @@ const DesignOne: React.FC = () => {
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Inizia subito a confrontare i migliori prodotti e fai acquisti sicuri dai siti ufficiali.
           </p>
-          <button className="bg-white text-design1-primary font-bold py-3 px-8 rounded-md text-lg hover:bg-gray-100 transition-colors">
+          <a 
+            href="https://rassodante-glutei.migliori-a-confronto.com/"
+            target="_blank"
+            rel="noopener"
+            className="bg-white text-design1-primary font-bold py-3 px-8 rounded-md text-lg hover:bg-gray-100 transition-colors"
+          >
             Inizia a Confrontare Ora
-          </button>
+          </a>
         </div>
       </section>
       
