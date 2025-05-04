@@ -37,7 +37,7 @@ const Hero: React.FC<HeroProps> = ({ variant }) => {
                 target="_blank" 
                 rel="noopener"
               >
-                <div className="flex items-center">
+                <div className="flex items-center justify-center w-full">
                   <Search size={20} className="mr-2" />
                   Confronta Prodotti
                 </div>
