@@ -56,7 +56,7 @@ const DesignTwo: React.FC = () => {
       </section>
       
       {/* Come Funziona */}
-      <section className="section-padding bg-gradient-to-b from-design2-light to-white">
+      <section className="section-padding bg-gradient-to-b from-design2-light to-white" id="come-funziona">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <span className="bg-design2-accent/10 text-design2-accent px-4 py-1 rounded-full text-sm font-medium inline-block mb-4">PROCESSO SEMPLICE</span>
@@ -104,7 +104,14 @@ const DesignTwo: React.FC = () => {
           </div>
           
           <div className="text-center mt-16">
-            <button className="btn-primary-2">Inizia a Confrontare</button>
+            <a 
+              href="https://rassodante-glutei.migliori-a-confronto.com/"
+              target="_blank"
+              rel="noopener"
+              className="btn-primary-2"
+            >
+              Inizia a Confrontare
+            </a>
           </div>
         </div>
       </section>

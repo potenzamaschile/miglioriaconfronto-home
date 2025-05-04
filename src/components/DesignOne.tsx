@@ -55,7 +55,7 @@ const DesignOne: React.FC = () => {
       </section>
       
       {/* Come Funziona */}
-      <section className="section-padding bg-design1-light">
+      <section className="section-padding bg-design1-light" id="come-funziona">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Semplifichiamo il Tuo Acquisto</h2>
@@ -97,7 +97,14 @@ const DesignOne: React.FC = () => {
           </div>
           
           <div className="text-center mt-12">
-            <button className="btn-primary-1">Inizia a Confrontare</button>
+            <a 
+              href="https://rassodante-glutei.migliori-a-confronto.com/"
+              target="_blank"
+              rel="noopener"
+              className="btn-primary-1"
+            >
+              Inizia a Confrontare
+            </a>
           </div>
         </div>
       </section>
