@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from './Header';
 import Hero from './Hero';
@@ -179,7 +180,9 @@ const DesignTwo: React.FC = () => {
                 </div>
               </div>
               
-              <a href="#la-nostra-promessa" className="btn-primary-2 mt-8">Scopri di Più</a>
+              <div className="mt-8">
+                <a href="#la-nostra-promessa" className="btn-primary-2 inline-block">Scopri di Più</a>
+              </div>
             </div>
           </div>
         </div>
