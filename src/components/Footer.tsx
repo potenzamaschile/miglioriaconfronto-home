@@ -33,9 +33,9 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
           <div className="md:col-span-1">
             <h4 className="font-bold text-lg mb-4">Informazioni</h4>
             <ul className="space-y-2">
-              <li><a href="#" className={linkColor}>Privacy Policy</a></li>
-              <li><a href="#" className={linkColor}>Cookie Policy</a></li>
-              <li><a href="#" className={linkColor}>Contatti</a></li>
+              <li><a href="https://www.iubenda.com/privacy-policy/68660868" className={linkColor} rel="nofollow" target="_blank">Privacy Policy</a></li>
+              <li><a href="https://www.iubenda.com/privacy-policy/68660868/cookie-policy" className={linkColor} rel="nofollow" target="_blank">Cookie Policy</a></li>
+              <li><a href="mailto:miglioriaconfonto@gmail.com" className={linkColor}>Contatti</a></li>
             </ul>
           </div>
         </div>
