@@ -22,15 +22,19 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
         {/* Removed navigation links here */}
         
         <div className="flex items-center space-x-4">
-          <button className={`p-2 rounded-full ${isDesign1 ? 'hover:bg-design1-light text-design1-dark' : 'hover:bg-design2-light text-design2-dark'}`}>
-            <Search size={20} />
-          </button>
+          {/* Search icon has been removed */}
           <button className={`p-2 md:hidden rounded-full ${isDesign1 ? 'hover:bg-design1-light text-design1-dark' : 'hover:bg-design2-light text-design2-dark'}`}>
             <Menu size={20} />
           </button>
-          <button className={isDesign1 ? 'btn-primary-1 hidden md:block' : 'btn-primary-2 hidden md:block'}>
-            Confronta Ora
-          </button>
+          <a 
+            href="https://rassodante-glutei.migliori-a-confronto.com/" 
+            className={isDesign1 ? 'btn-primary-1 hidden md:flex items-center space-x-2' : 'btn-primary-2 hidden md:flex items-center space-x-2'}
+            target="_blank" 
+            rel="noopener"
+          >
+            <Search size={20} />
+            <span>Confronta Ora</span>
+          </a>
         </div>
       </div>
     </header>
