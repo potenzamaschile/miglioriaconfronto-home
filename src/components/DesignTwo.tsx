@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Hero from './Hero';
 import Footer from './Footer';
-import { Shield, CheckCircle, Award, Star, Search } from 'lucide-react';
+import { Shield, CheckCircle, Award, Star } from 'lucide-react';
 
 const DesignTwo: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const DesignTwo: React.FC = () => {
       <Hero variant="design2" />
       
       {/* Cosa Facciamo Per Te */}
-      <section id="nostra-promessa" className="section-padding bg-white">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <span className="bg-design2-accent/10 text-design2-accent px-4 py-1 rounded-full text-sm font-medium inline-block mb-4">LA NOSTRA MISSIONE</span>
@@ -56,7 +56,7 @@ const DesignTwo: React.FC = () => {
       </section>
       
       {/* Come Funziona */}
-      <section id="semplifichiamo-acquisto" className="section-padding bg-gradient-to-b from-design2-light to-white">
+      <section className="section-padding bg-gradient-to-b from-design2-light to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <span className="bg-design2-accent/10 text-design2-accent px-4 py-1 rounded-full text-sm font-medium inline-block mb-4">PROCESSO SEMPLICE</span>
@@ -104,10 +104,7 @@ const DesignTwo: React.FC = () => {
           </div>
           
           <div className="text-center mt-16">
-            <a href="https://rassodante-glutei.migliori-a-confronto.com/" className="btn-primary-2 inline-flex items-center">
-              <Search size={20} className="mr-2" />
-              Inizia a Confrontare
-            </a>
+            <button className="btn-primary-2">Inizia a Confrontare</button>
           </div>
         </div>
       </section>
@@ -175,9 +172,7 @@ const DesignTwo: React.FC = () => {
                 </div>
               </div>
               
-              <a href="#nostra-promessa" className="btn-primary-2 mt-8 inline-flex items-center">
-                Scopri di Più
-              </a>
+              <button className="btn-primary-2 mt-8">Scopri di Più</button>
             </div>
           </div>
         </div>
@@ -274,10 +269,9 @@ const DesignTwo: React.FC = () => {
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Inizia subito a confrontare i migliori prodotti e fai acquisti sicuri dai siti ufficiali.
           </p>
-          <a href="https://rassodante-glutei.migliori-a-confronto.com/" className="bg-white text-design2-primary font-bold py-4 px-10 rounded-full text-lg hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl inline-flex items-center">
-            <Search size={20} className="mr-2" />
+          <button className="bg-white text-design2-primary font-bold py-4 px-10 rounded-full text-lg hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl">
             Inizia a Confrontare Ora
-          </a>
+          </button>
           <div className="text-white/70 mt-6 text-sm">
             Nessuna registrazione richiesta - Confronti 100% gratuiti
           </div>

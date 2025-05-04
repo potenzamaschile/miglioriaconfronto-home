@@ -28,15 +28,9 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
           <button className={`p-2 md:hidden rounded-full ${isDesign1 ? 'hover:bg-design1-light text-design1-dark' : 'hover:bg-design2-light text-design2-dark'}`}>
             <Menu size={20} />
           </button>
-          <a 
-            href="https://rassodante-glutei.migliori-a-confronto.com/" 
-            className={isDesign1 ? 'btn-primary-1 hidden md:block' : 'btn-primary-2 hidden md:block'}
-          >
-            <div className="flex items-center">
-              <Search size={20} className="mr-2" />
-              Confronta Ora
-            </div>
-          </a>
+          <button className={isDesign1 ? 'btn-primary-1 hidden md:block' : 'btn-primary-2 hidden md:block'}>
+            Confronta Ora
+          </button>
         </div>
       </div>
     </header>
