@@ -31,15 +31,15 @@ const Hero: React.FC<HeroProps> = ({ variant }) => {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className={primaryBtn}>
+              <a href="https://rassodante-glutei.migliori-a-confronto.com/" className={primaryBtn}>
                 <div className="flex items-center">
                   <Search size={20} className="mr-2" />
                   Confronta Prodotti
                 </div>
-              </button>
-              <button className={secondaryBtn}>
+              </a>
+              <a href="#semplifichiamo-acquisto" className={secondaryBtn}>
                 Scopri Come Funziona
-              </button>
+              </a>
             </div>
             
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4 sm:gap-8">
@@ -51,13 +51,13 @@ const Hero: React.FC<HeroProps> = ({ variant }) => {
               </div>
               <div className="flex items-center justify-center">
                 <div className={`${isDesign1 ? 'text-design1-primary' : 'text-design2-primary'} mr-2`}>
-                  <Check size={20} />
+                  <ShieldCheck size={20} />
                 </div>
                 <span className="text-gray-700">Prodotti Originali</span>
               </div>
               <div className="flex items-center justify-center">
                 <div className={`${isDesign1 ? 'text-design1-primary' : 'text-design2-primary'} mr-2`}>
-                  <Check size={20} />
+                  <ShieldCheck size={20} />
                 </div>
                 <span className="text-gray-700">Confronti Imparziali</span>
               </div>

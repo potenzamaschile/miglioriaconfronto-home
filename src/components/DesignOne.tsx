@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Hero from './Hero';
 import Footer from './Footer';
-import { Shield, CheckCircle, Award } from 'lucide-react';
+import { Shield, CheckCircle, Award, Search } from 'lucide-react';
 
 const DesignOne: React.FC = () => {
   return (
@@ -10,8 +10,8 @@ const DesignOne: React.FC = () => {
       <Header variant="design1" />
       <Hero variant="design1" />
       
-      {/* Cosa Facciamo Per Te */}
-      <section className="section-padding bg-white">
+      {/* Cosa Facciamo Per Te - La Nostra Promessa */}
+      <section id="nostra-promessa" className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">La Nostra Promessa: Acquisti Trasparenti e Sicuri</h2>
@@ -54,8 +54,8 @@ const DesignOne: React.FC = () => {
         </div>
       </section>
       
-      {/* Come Funziona */}
-      <section className="section-padding bg-design1-light">
+      {/* Come Funziona - Semplifichiamo il Tuo Acquisto */}
+      <section id="semplifichiamo-acquisto" className="section-padding bg-design1-light">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Semplifichiamo il Tuo Acquisto</h2>
@@ -97,12 +97,17 @@ const DesignOne: React.FC = () => {
           </div>
           
           <div className="text-center mt-12">
-            <button className="btn-primary-1">Inizia a Confrontare</button>
+            <a href="https://rassodante-glutei.migliori-a-confronto.com/" className="btn-primary-1">
+              <div className="flex items-center">
+                <Search size={20} className="mr-2" />
+                Inizia a Confrontare
+              </div>
+            </a>
           </div>
         </div>
       </section>
       
-      {/* Perché Sceglierci */}
+      {/* Perché Sceglierci - Siamo la Tua Guida */}
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center">
@@ -150,7 +155,7 @@ const DesignOne: React.FC = () => {
                 </div>
               </div>
               
-              <button className="btn-primary-1 mt-8">Scopri di Più</button>
+              <a href="#nostra-promessa" className="btn-primary-1 mt-8">Scopri di Più</a>
             </div>
             
             <div className="lg:w-1/2">
@@ -259,9 +264,10 @@ const DesignOne: React.FC = () => {
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Inizia subito a confrontare i migliori prodotti e fai acquisti sicuri dai siti ufficiali.
           </p>
-          <button className="bg-white text-design1-primary font-bold py-3 px-8 rounded-md text-lg hover:bg-gray-100 transition-colors">
+          <a href="https://rassodante-glutei.migliori-a-confronto.com/" className="bg-white text-design1-primary font-bold py-3 px-8 rounded-md text-lg hover:bg-gray-100 transition-colors flex items-center justify-center inline-flex">
+            <Search size={20} className="mr-2" />
             Inizia a Confrontare Ora
-          </button>
+          </a>
         </div>
       </section>
       
