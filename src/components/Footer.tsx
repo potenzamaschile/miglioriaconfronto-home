@@ -35,7 +35,7 @@ const Footer: React.FC<FooterProps> = ({ variant }) => {
             <ul className="space-y-2">
               <li><a href="https://www.iubenda.com/privacy-policy/68660868" className={linkColor} rel="nofollow" target="_blank">Privacy Policy</a></li>
               <li><a href="https://www.iubenda.com/privacy-policy/68660868/cookie-policy" className={linkColor} rel="nofollow" target="_blank">Cookie Policy</a></li>
-              <li><a href="mailto:miglioriaconfonto@gmail.com" className={linkColor}>Contatti</a></li>
+              <li><a href="mailto:miglioriaconfronto@gmail.com" className={linkColor}>Contatti</a></li>
             </ul>
           </div>
         </div>
