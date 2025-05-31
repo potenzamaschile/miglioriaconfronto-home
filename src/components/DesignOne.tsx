@@ -167,9 +167,11 @@ const DesignOne: React.FC = () => {
               <div className="relative">
                 <div className="bg-design1-light rounded-lg p-6">
                   <img 
-                    src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+                    src="/lovable-uploads/b0b23205-90df-4b68-ab86-5ccb995c95f2.png" 
                     alt="Donna che confronta prodotti" 
                     className="rounded-lg shadow-lg w-full"
+                    width="800"
+                    height="600"
                   />
                   
                   <div className="absolute -top-4 -left-4 bg-design1-primary text-white p-4 rounded-lg shadow-lg">
