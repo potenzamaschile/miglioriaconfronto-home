@@ -123,7 +123,7 @@ const DesignTwo: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 lg:pr-16">
               <img 
-                src={`${window.location.origin}/lovable-uploads/489a54b1-4853-464a-afa5-a15b7816d21a.png`}
+                src="/lovable-uploads/7da14f4a-497e-4143-b45e-0317ae8be511.png"
                 alt="Sezione Come Funziona" 
                 className="rounded-xl shadow-lg mb-8 lg:mb-0 max-w-full"
               />
