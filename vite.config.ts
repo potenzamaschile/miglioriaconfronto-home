@@ -14,6 +14,12 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === 'development' &&
     componentTagger(),
+    visualizer({
+      open: true, // Automatically open the report in your browser after build
+      gzipSize: true,
+      brotliSize: true,
+      filename: "bundle-analysis.html", // Output file name
+    }),
   ].filter(Boolean),
   resolve: {
     alias: {
