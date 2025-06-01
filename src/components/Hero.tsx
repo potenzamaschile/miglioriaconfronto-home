@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({ variant }) => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-800">
+            <h1 className="hero-title text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-800">
               Migliori Prodotti a Confronto: 
               <span className={primaryColor}> Scegli con Sicurezza</span> e Acquista in Pochi Click
             </h1>

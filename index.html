@@ -2,13 +2,74 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<script type="text/javascript">
-var _iub = _iub || [];
-_iub.csConfiguration = {"siteId":4015615,"cookiePolicyId":68660868,"lang":"it","storage":{"useSiteId":true}};
-</script>
-<script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4015615.js" async></script>
-<script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 
+    <script>
+  // Lazy load Iubenda after user interaction
+  let iubendaLoaded = false;
+  
+  function loadIubenda() {
+    if (iubendaLoaded) return;
+    iubendaLoaded = true;
+    
+    // Load Iubenda CS script
+    const script1 = document.createElement('script');
+    script1.src = 'https://cdn.iubenda.com/cs/iubenda_cs.js';
+    script1.async = true;
+    document.head.appendChild(script1);
+    
+    // Load autoblocking script
+    const script2 = document.createElement('script');
+    script2.src = 'https://cs.iubenda.com/autoblocking/4015615.js';
+    script2.async = true;
+    document.head.appendChild(script2);
+    
+    // Add your Iubenda configuration
+    window._iub = window._iub || [];
+    window._iub.csConfiguration = {
+      "askConsentAtCookiePolicyUpdate": true,
+      "enableFadp": true,
+      "enableLgpd": true,
+      "enableUspr": true,
+      "fadpApplies": true,
+      "floatingPreferencesButtonDisplay": "bottom-right",
+      "lang": "it",
+      "perPurposeConsent": true,
+      "siteId": 4015615, // Replace with your actual site ID
+      "whitelabel": false,
+      "cookiePolicyId": 68660868, // Replace with your actual ID
+      "banner": {
+        "acceptButtonDisplay": true,
+        "closeButtonDisplay": false,
+        "customizeButtonDisplay": true,
+        "explicitWithdrawal": true,
+        "listPurposes": true,
+        "ownerName": "Your Company Name",
+        "position": "float-top-center",
+        "rejectButtonDisplay": true,
+        "showTitle": false
+      }
+    };
+  }
+  
+  // Load Iubenda after 3 seconds or on first interaction
+  const interactions = ['mousedown', 'keydown', 'touchstart', 'scroll'];
+  
+  function triggerLoad() {
+    loadIubenda();
+    // Remove all listeners after loading
+    interactions.forEach(event => {
+      document.removeEventListener(event, triggerLoad, { passive: true });
+    });
+  }
+  
+  // Add interaction listeners
+  interactions.forEach(event => {
+    document.addEventListener(event, triggerLoad, { passive: true });
+  });
+  
+  // Also load after 3 seconds if no interaction
+  setTimeout(loadIubenda, 3000);
+</script>
 
     
     
@@ -29,14 +90,41 @@ _iub.csConfiguration = {"siteId":4015615,"cookiePolicyId":68660868,"lang":"it","
     
     <link rel="icon" href="public/lovable-uploads/7a4bdb89-25e7-4760-8778-730621a51339.png" type="image/png">
 
-
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
 <!-- Preload critical font weights -->
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap"></noscript>
 <!-- Load non-critical font weights asynchronously -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" as="style">
+<link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhzg.woff2" as="font" type="font/woff2" crossorigin>
+
+  
+<!-- Add critical inline CSS for hero text -->
+<style>
+  /* Critical CSS for LCP element */
+  .hero-title {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: clamp(1.875rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  /* Prevent layout shift */
+  @media (min-width: 768px) {
+    .hero-title { font-size: clamp(2.25rem, 5vw, 2.5rem); }
+  }
+  @media (min-width: 1024px) {
+    .hero-title { font-size: clamp(2.5rem, 6vw, 3rem); }
+  }
+</style>
 
 
   
