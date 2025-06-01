@@ -2,60 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-<script>
-  // Lazy load Iubenda after user interaction
-  let iubendaLoaded = false;
-  
-  function loadIubenda() {
-    if (iubendaLoaded) return;
-    iubendaLoaded = true;
-    
-    // FIRST: Set the configuration
-    window._iub = window._iub || [];
-    window._iub.csConfiguration = {
-      "siteId": 4015615,
-      "cookiePolicyId": 68660868,
-      "lang": "it",
-      "storage": {
-        "useSiteId": true
-      }
-    };
-    
-    // THEN: Load the scripts in correct order
-    // Load autoblocking script first
-    const script1 = document.createElement('script');
-    script1.src = 'https://cs.iubenda.com/autoblocking/4015615.js';
-    script1.async = true;
-    document.head.appendChild(script1);
-    
-    // Load CS script second
-    const script2 = document.createElement('script');
-    script2.src = 'https://cdn.iubenda.com/cs/iubenda_cs.js';
-    script2.charset = 'UTF-8';
-    script2.async = true;
-    document.head.appendChild(script2);
-  }
-  
-  // Load Iubenda after 3 seconds or on first interaction
-  const interactions = ['mousedown', 'keydown', 'touchstart', 'scroll'];
-  
-  function triggerLoad() {
-    loadIubenda();
-    // Remove all listeners after loading
-    interactions.forEach(event => {
-      document.removeEventListener(event, triggerLoad, { passive: true });
-    });
-  }
-  
-  // Add interaction listeners
-  interactions.forEach(event => {
-    document.addEventListener(event, triggerLoad, { passive: true });
-  });
-  
-  // Also load after 3 seconds if no interaction
-  setTimeout(loadIubenda, 3000);
+<script type="text/javascript">
+var _iub = _iub || [];
+_iub.csConfiguration = {"siteId":4015615,"cookiePolicyId":68660868,"lang":"it","storage":{"useSiteId":true}};
 </script>
+<script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4015615.js" async></script>
+<script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+
 
     
     
