@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from './Header';
 import Hero from './Hero';
@@ -107,7 +106,6 @@ const DesignTwo: React.FC = () => {
           <div className="text-center mt-16">
             <a 
               href="https://rassodante-glutei.migliori-a-confronto.com/"
-              target="_blank"
               rel="noopener"
               className="btn-primary-2"
             >
@@ -281,7 +279,6 @@ const DesignTwo: React.FC = () => {
           </p>
           <a 
             href="https://rassodante-glutei.migliori-a-confronto.com/"
-            target="_blank"
             rel="noopener"
             className="bg-white text-design2-primary font-bold py-4 px-10 rounded-full text-lg hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl"
           >

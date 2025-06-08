@@ -29,7 +29,6 @@ const Header: React.FC<HeaderProps> = ({ variant }) => {
           <a 
             href="https://rassodante-glutei.migliori-a-confronto.com/" 
             className={isDesign1 ? 'btn-primary-1 hidden md:flex items-center space-x-2' : 'btn-primary-2 hidden md:flex items-center space-x-2'}
-            target="_blank" 
             rel="noopener"
           >
             <Search size={20} />

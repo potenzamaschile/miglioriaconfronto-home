@@ -34,7 +34,6 @@ const Hero: React.FC<HeroProps> = ({ variant }) => {
               <a 
                 href="https://rassodante-glutei.migliori-a-confronto.com/" 
                 className={primaryBtn}
-                target="_blank" 
                 rel="noopener"
               >
                 <div className="flex items-center justify-center w-full">
